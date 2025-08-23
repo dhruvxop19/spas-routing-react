@@ -4,9 +4,15 @@ function App() {
   return <div>
     <BrowserRouter>
       <Routes>
-
+        <Route path="/" element={<Landing />} />
       </Routes>
     </BrowserRouter>
+  </div>
+}
+
+function Landing() {
+  return <div>
+    Welcome to Allen
   </div>
 }
 
