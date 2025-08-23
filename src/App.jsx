@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom"
 
 function App() {
   return <div>
@@ -32,8 +32,14 @@ function Class11Program() {
 }
 
 function Class12Program() {
+  const navigate = useNavigate();
+
+  function redirectUser() {
+    navigate("/")
+  }
   return <div>
     Class 12 content
+    <button onClick={redirectUser}>Landing Page</button>
   </div>
 }
 
